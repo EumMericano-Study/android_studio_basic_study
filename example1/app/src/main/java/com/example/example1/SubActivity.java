@@ -28,7 +28,9 @@ public class SubActivity extends AppCompatActivity {
         findViewById(R.id.Btn3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SubActivity.this, MainActivity.class));
+                Intent intent =  new Intent(SubActivity.this, MainActivity.class);
+                intent.putExtra("키","위");
+                startActivity(intent);
             }
         });
 
