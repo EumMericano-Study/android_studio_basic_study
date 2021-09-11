@@ -1,6 +1,8 @@
 package com.example.example1;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -19,9 +21,17 @@ public class SubActivity extends AppCompatActivity {
         Btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Log.d("태그", "값");
             }
         });
+
+        findViewById(R.id.Btn3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SubActivity.this, MainActivity.class));
+            }
+        });
+
     }
 
     public void Btn1Click(View v) {
