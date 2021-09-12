@@ -9,6 +9,7 @@ import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.success_layout.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +35,11 @@ class MainActivity : AppCompatActivity() {
             && et_name.text.toString() == "Young" && et_age.text.toString() == "31")
             {
                 Toast.makeText(this, "로그인 성공", Toast.LENGTH_LONG).show()
-                startActivity(Intent(this, SuccessActivity::class.java))
+                var intent = Intent(this, SuccessActivity::class.java)
+                intent.putExtra("name", "Eumericano")
+
+                startActivity(intent)
+
             } else Toast.makeText(this, "로그인 실패", Toast.LENGTH_LONG).show()
     }
 
