@@ -13,9 +13,14 @@
         android:layout_height="70dp"
         android:textCursorDrawable="@null"
         />
+
     <ImageView
+        android:id="@+id/iv_basic"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:src="@drawable/example_01"
+        android:layout_height="221dp"
+        android:layout_gravity="center"
+        android:alpha="0.3"
+        android:src="@drawable/example_01_resize"
+        android:onClick="LoadImage"
         />
 </LinearLayout>
