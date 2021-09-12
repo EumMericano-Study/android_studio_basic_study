@@ -24,6 +24,12 @@ class MainActivity : AppCompatActivity() {
             }
             false
         }
+
+        val pref = this.getPreferences(0)
+        et_email.setText(pref.getString("email", ""))
+        et_password.setText(pref.getString("password", ""))
+        et_name.setText(pref.getString("name",  ""))
+        et_age.setText(pref.getString("age", ""))
     }
 
     fun login(v: View) {
@@ -39,6 +45,13 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("name", "Eumericano")
 
                 startActivity(intent)
+
+                var editor = this.getPreferences(0).edit()
+                editor.putString("email", "opwer032@naver.com").apply()
+                editor.putString("password", "password").apply()
+                editor.putString("name", "Young").apply()
+                editor.putString("age", "31").apply()
+
 
             } else Toast.makeText(this, "로그인 실패", Toast.LENGTH_LONG).show()
     }
