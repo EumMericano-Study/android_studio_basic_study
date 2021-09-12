@@ -10,9 +10,9 @@ class SuccessActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.success_layout)
 
-
         if (intent.hasExtra("name")) {
-            tv_result.text = "${intent.getStringExtra("name")}님 환영합니다"
+            val name= intent.getStringExtra("name")
+            tv_result.text = "${name}님 환영합니다"
         }
     }
 }
