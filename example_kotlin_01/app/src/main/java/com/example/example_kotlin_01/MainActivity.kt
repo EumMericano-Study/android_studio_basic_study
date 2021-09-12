@@ -1,6 +1,7 @@
 package com.example.example_kotlin_01
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             && et_name.text.toString() == "Young" && et_age.text.toString() == "31")
             {
                 Toast.makeText(this, "로그인 성공", Toast.LENGTH_LONG).show()
+                startActivity(Intent(this, SuccessActivity::class.java))
             } else Toast.makeText(this, "로그인 실패", Toast.LENGTH_LONG).show()
     }
 
