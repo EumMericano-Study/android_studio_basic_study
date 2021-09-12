@@ -10,7 +10,12 @@
     <EditText
         android:id="@+id/et"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="70dp"
+        android:textCursorDrawable="@null"
         />
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/example_01"
+        />
 </LinearLayout>
