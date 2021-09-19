@@ -19,8 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="221dp"
         android:layout_gravity="center"
-        android:alpha="0.3"
-        android:src="@drawable/example_01_resize"
+        android:alpha="0.7"
         android:onClick="LoadImage"
-        />
+        android:src="@drawable/example_01_resize" />
 </LinearLayout>
