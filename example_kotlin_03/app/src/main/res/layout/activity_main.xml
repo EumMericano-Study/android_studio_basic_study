@@ -36,6 +36,25 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_200"/>
 
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_500"/>
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_700"/>
+
+    </FrameLayout>
 </LinearLayout>
