@@ -37,11 +37,11 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        binding.ivBasic.setScaleType(ImageView.ScaleType.MATRIX)
-
-        val matrix = Matrix()
-        matrix.postRotate(10f)
-        binding.ivBasic.setImageMatrix(matrix)
+//        binding.ivBasic.setScaleType(ImageView.ScaleType.MATRIX)
+//
+//        val matrix = Matrix()
+//        matrix.postRotate(5f)
+//        binding.ivBasic.setImageMatrix(matrix)
 
     }
 
