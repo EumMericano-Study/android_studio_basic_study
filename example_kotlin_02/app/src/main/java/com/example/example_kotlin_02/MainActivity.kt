@@ -23,26 +23,6 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        binding.et.addTextChangedListener(object: TextWatcher {
-            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                println("텍스트 변경 전 " + p0)
-            }
-
-            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                println("텍스트 변경 중 " + p0)
-            }
-
-            override fun afterTextChanged(p0: Editable?) {
-                println("텍스트 변경 후 " + p0)
-            }
-        })
-
-//        binding.ivBasic.setScaleType(ImageView.ScaleType.MATRIX)
-//
-//        val matrix = Matrix()
-//        matrix.postRotate(5f)
-//        binding.ivBasic.setImageMatrix(matrix)
-
     }
 
     fun LoadImage(v: View) {
